@@ -1,14 +1,13 @@
-function login() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    var errorMessage = document.getElementById("error-message");
+function validateLogin() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
 
-    // Aquí puedes agregar lógica de autenticación, por ejemplo, comparar con credenciales predefinidas
-    if (username === "usuario" && password === "contrasena") {
-        // Inicio de sesión exitoso, redirige a la nueva página
-        window.location.href = "../assets/pages/contactos.html";
+    // Aquí puedes agregar lógica de validación, como enviar los datos a un servidor y verificar la autenticación.
+
+    if (username === 'usuario' && password === 'contraseña') {
+        // Redirigir a la página deseada después de la validación exitosa
+        window.location.href = '../assets/pages/contactos.html';
     } else {
-        errorMessage.innerHTML = "Credenciales incorrectas. Intenta de nuevo.";
-        errorMessage.style.color = "#ff0000";
+        alert('Error en el inicio de sesión. Verifica tu usuario y contraseña.');
     }
 }
