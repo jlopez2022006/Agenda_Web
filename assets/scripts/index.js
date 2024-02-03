@@ -1,13 +1,12 @@
-function validateLogin() {
+function login() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
-
-    // Aquí puedes agregar lógica de validación, como enviar los datos a un servidor y verificar la autenticación.
-
-    if (username === 'usuario' && password === 'contraseña') {
-        // Redirigir a la página deseada después de la validación exitosa
-        window.location.href = '../assets/pages/contactos.html';
+  
+    // Comprobar las credenciales
+    if (username === 'Ivan' && password === '123') {
+      alert('¡Login exitoso!\nUsuario: ' + username);
+      window.location.href = './assets/pages/contactos.html'; 
     } else {
-        alert('Error en el inicio de sesión. Verifica tu usuario y contraseña.');
+      alert('Error en las credenciales. Inténtalo de nuevo.');
     }
-}
+  }
