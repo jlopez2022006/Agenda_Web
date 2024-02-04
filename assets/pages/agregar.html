@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/agregar.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Agregar Contacto</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="bg-warning text-white text-center py-4">
+      <h1 class="display-4">Agregar Contacto</h1>
+    </header>
+
+    <main class="p-4">
+      <form id="agregarForm" onsubmit="agregarContacto(event)" class="text-center">
+        <label for="nombre" class="mt-2">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required class="form-control">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required class="form-control">
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required class="form-control">
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required class="form-control">
+
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required class="form-control">
+
+        <button type="submit" class="btn btn-primary mt-3">Agregar</button>
+      </form>
+    </main>
+
+    <!-- Botón para regresar a la página anterior -->
+    <button onclick="regresarPagina()" class="btn btn-secondary mt-3">Regresar</button>
+  </div>
+
+  <script src="../scripts/agregar.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    function regresarPagina() {
+      window.history.back();
+    }
+  </script>
+</body>
+
+</html>
