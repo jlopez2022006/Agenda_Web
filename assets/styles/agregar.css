@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  /* Cambié la fuente a Montserrat */
+  background: url('../resources/images/fondoBlanco.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header {
+  background-color: #2ecc71;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Pacifico', cursive;
+  /* Cambié la fuente a Pacifico para el título principal */
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  /* Añadí la fuente Roboto para las etiquetas */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+button.secondary {
+  background-color: #e74c3c;
+}
+
+button.secondary:hover {
+  background-color: #c0392b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  box-sizing: border-box;
+  text-align: center; /* Añadí esta línea para centrar el texto dentro del input */
+}
