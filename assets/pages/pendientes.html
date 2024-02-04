@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/pendientes.css">
+    <title>Lista de Pendientes</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 mb-4">Lista de Pendientes</h1>
+        <div id="formContainer" class="mb-4">
+            <form id="pendienteForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="prioridad">Prioridad:</label>
+                    <select id="prioridad" class="form-control">
+                        <option value="alta">Alta</option>
+                        <option value="media">Media</option>
+                        <option value="baja">Baja</option>
+                    </select>
+                </div>
+                <button type="button" onclick="agregarPendiente()" class="btn btn-primary btn-block">Agregar</button>
+            </form>
+        </div>
+        <div id="tablaContainer">
+            <table id="pendientesTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Prioridad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se cargarán los pendientes dinámicamente desde JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <button onclick="irAContactos()" class="btn btn-secondary btn-block">Regresar a Contactos</button>
+    </div>
+    <script src="../scripts/pendientes.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
