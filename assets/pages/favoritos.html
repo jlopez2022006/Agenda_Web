@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/favoritos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Favoritos</title>
+</head>
+
+<body>
+    <div class="container p-4 mb-4">
+        <header class="bg-success text-white text-center py-4 mb-4">
+            <h1 class="display-4">Contactos Favoritos</h1>
+        </header>
+
+        <main class="p-4">
+            <table id="favoritosTable" class="table table-bordered table-hover">
+                <thead class="bg-secondary text-white">
+                    <tr>
+                        <th>Nombre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se cargarán los contactos favoritos dinámicamente desde JavaScript -->
+                </tbody>
+            </table>
+        </main>
+
+        <button onclick="irAContactos()" class="btn btn-primary mt-3">Volver a Contactos</button>
+    </div>
+    <script src="../scripts/favoritos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
